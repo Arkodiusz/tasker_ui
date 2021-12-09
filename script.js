@@ -1,8 +1,8 @@
 $(document).ready(function() {
    // const apiRoot = 'http://localhost:8080/v1/';
    // const trelloApiRoot = 'http://localhost:8080/v1/trello/';
-   const apiRoot = 'https://powerful-ravine-73783.herokuapp.com/v1/';
-   const trelloApiRoot = 'https://powerful-ravine-73783.herokuapp.com/v1/trello/';
+   const apiRoot = 'https://btasker.herokuapp.com/v1/';
+   const trelloApiRoot = 'https://btasker.herokuapp.com/v1/trello/';
    const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
    const $tasksContainer = $('[data-tasks-container]');
 
@@ -10,7 +10,6 @@ $(document).ready(function() {
    var availableTasks = {};
 
    // init
-
    getAllTasks();
 
    function getAllAvailableBoards(callback, callbackArgs) {
